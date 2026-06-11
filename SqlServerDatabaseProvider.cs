@@ -6,8 +6,15 @@ using System.Data;
 
 namespace Dreamine.Database.SqlServer;
 
+/// <summary>
+/// Provides a SQL Server database provider implementation.
+/// </summary>
 public sealed class SqlServerDatabaseProvider : DatabaseProviderBase
 {
+    /// <summary>
+    /// Initializes a new instance of the <see cref="SqlServerDatabaseProvider"/> class.
+    /// </summary>
+    /// <param name="connectionString">The SQL Server connection string.</param>
     public SqlServerDatabaseProvider(string connectionString)
         : base(connectionString)
     {
